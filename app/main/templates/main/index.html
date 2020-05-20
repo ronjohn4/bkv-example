@@ -1,0 +1,14 @@
+{% extends "base.html" %}
+
+{% block content %}
+<h2>Application Configuration</h2>
+
+<li>A Bag represents a collection or group of KeyVal pairs that can be used by an application.</li>
+<li>The values for the KeyVal pairs can be maintained by operations without coding changes.</li>
+<li>A Bag supports KeyVal setting for multiple Instances (or Environments).</li>
+<li>This test application is using bag=bkvtest and instance=prd.  You can go to bkv and change these values.</li>
+</ul>
+<h2>Bag Key Values</h2>
+<p>Key1: {{ config['KEY1'] }}</p>
+<p>SecondKey: {{ config['SECONDKEY'] }}</p>
+{% endblock %}
